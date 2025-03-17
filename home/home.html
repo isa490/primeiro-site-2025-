@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h2>Welcome to</h2>
+            <h1>LojaExpress</h1>
+            <p>Bem-vindo à LojaExpress! Sua loja online de confiança para compras fáceis e rápidas</p>
+            <button class="custom-button" onclick="openInNewTab('../isabela.html')">Join Now</button>
+        </div>
+        <div>
+            <img class="image" src="pngtree-shopping-online-on-smart-phone-digital-online-communication-vector-png-image_31102332-removebg-preview.png" alt="Descrição da Imagem">
+        </div>
+    </div>
+
+    <script>
+        function openInNewTab(url) {
+            const newWindow = window.open(url, '_blank');
+            if (newWindow) {
+                newWindow.focus();
+            } else {
+                alert('Permita pop-ups para este site.');
+            }
+        }
+    </script>
+
+</body>
+</html>
