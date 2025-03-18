@@ -1,3 +1,20 @@
+/* Estilo para o botão de sign up */
+.button-signup {
+    width: 100px; /* Ajusta a largura do botão */
+    padding: 5px 10px; /* Ajusta o padding do botão */
+    background-color: rgb(216, 171, 228);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+
+}
+.button-signup:hover {
+    background-color: blueviolet;
+}
+
+
 /* Exemplo de media query para telas menores que 600px */
 @media (max-width: 600px) {
     body {
