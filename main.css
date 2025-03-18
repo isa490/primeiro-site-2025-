@@ -14,7 +14,6 @@
     background-color: blueviolet;
 }
 
-
 /* Exemplo de media query para telas menores que 600px */
 @media (max-width: 600px) {
     body {
