@@ -116,10 +116,17 @@ ul li {
     justify-content: space-around;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     .produto-container {
         width: 100%;
         flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .colaborador img{
+        width: 30%;
     }
     
 }
