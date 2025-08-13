@@ -1,36 +1,35 @@
 /* Estilo para o botão de sign up */
 .button-signup {
-    width: 100px; /* Ajusta a largura do botão */
-    padding: 5px 10px; /* Ajusta o padding do botão */
+    width: 100px;
+    padding: 5px 10px;
     background-color: rgb(216, 171, 228);
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
-
 }
 .button-signup:hover {
     background-color: blueviolet;
 }
 
-/* Exemplo de media query para telas menores que 600px */
+/* Responsividade geral */
 @media (max-width: 600px) {
     body {
-      font-size: 18px;
+        font-size: 18px;
     }
-  
     .container {
-      padding: 10px;
+        padding: 10px;
     }
-  }
+}
 
+/* Fundo e estrutura base */
 body {
     background: url('https://img.freepik.com/fotos-premium/fondo-color-violeta-violeta-claro-fondo-degradado-borroso-abstracto-plantilla-banner_335640-3273.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 div {
@@ -38,16 +37,13 @@ div {
     padding-right: 20px;
 }
 
-.nav-menu ul li .link {
-    text-decoration: none;
-    font-weight: 500;
-    color: #fff;
-    padding-bottom: 15px;
-    margin: 0 15px;
-}
-
-.link:hover, .active {
-    border-bottom: 2px solid #ccc;
+/* Navbar e menu */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 10px;
 }
 
 .icon {
@@ -56,18 +52,23 @@ div {
     height: 70px;
 }
 
+.navbar .icon img {
+    height: 145px;
+    width: auto;
+}
+
 .menu {
     width: auto;
-    margin-left: auto; /* Alinha o contêiner do menu à direita */
+    margin-left: auto;
     height: 70px;
     display: flex;
-    justify-content: flex-end; /* Alinha os itens dentro do contêiner do menu à direita */
+    justify-content: flex-end;
     align-items: center;
 }
 
 ul {
     display: flex;
-    justify-content: flex-end; /* Alinha os itens dentro do ul à direita */
+    justify-content: flex-end;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -79,22 +80,97 @@ ul li {
     font-size: 14px;
 }
 
-/* Estilos adicionais para responsividade */
+.nav-menu ul li .link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 15px;
+}
+
+.link:hover,
+.active {
+    border-bottom: 2px solid #ccc;
+}
+
+/* Formulário */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    padding: 20px;
+}
+
+.form-box {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+
+.form-box .top {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-box .top header {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-box .top span a {
+    color: #eff3f7;
+    text-decoration: none;
+}
+
+.form-box .input-box {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-box .input-box input {
+    width: calc(100% - 30px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-box .input-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .menu ul {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .menu ul li {
         margin: 5px 0;
     }
+
     .icon {
         width: 150px;
         height: 50px;
+    }
+
+    .navbar .icon img {
+        height: 100px;
     }
 }
 
@@ -103,30 +179,34 @@ ul li {
         width: 100px;
         height: 40px;
     }
+
+    .form-box {
+        max-width: 100%;
+        padding: 10px;
+    }
+
     .menu ul li a {
         font-size: 12px;
     }
+
     .nav-menu ul li .link {
         padding-bottom: 10px;
     }
 }
+
+/* Outros */
 .produto-container {
     display: flex;
     width: 100%;
     justify-content: space-around;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .produto-container {
-        width: 100%;
         flex-direction: column;
     }
-    
-}
 
-@media screen and (max-width: 768px){
-    .colaborador img{
+    .colaborador img {
         width: 30%;
     }
-    
 }
